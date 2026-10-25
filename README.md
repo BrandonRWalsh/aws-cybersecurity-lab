@@ -1,8 +1,8 @@
-\# AWS Cybersecurity Lab with Terraform
+﻿# AWS Cybersecurity Lab with Terraform
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -14,7 +14,7 @@ I then used Terraform to write infrastructure configurations, import my existing
 
 
 
-\## Network Architecture
+## Network Architecture
 
 
 
@@ -46,29 +46,29 @@ The private subnet has no direct route to the internet. The public subnet uses a
 
 
 
-\## Security Considerations
+## Security Considerations
 
 
 
-\### Network Segmentation
+### Network Segmentation
 
 The VPC contains separate public and private subnets. The private subnet does not have a default route to the internet, reducing direct internet exposure for resources deployed within it.
 
 
 
-\### Firewall Configuration
+### Firewall Configuration
 
 An AWS Security Group was created with no inbound rules, blocking new incoming connections by default. The existing outbound rule allows all IPv4 traffic.
 
 
 
-\### Infrastructure as Code
+### Infrastructure as Code
 
 Terraform was used to import and manage the existing AWS infrastructure. Running `terraform plan` allowed configuration differences to be identified before making changes, helping prevent accidental resource modifications or deletion.
 
 
 
-\### Future Security Improvements
+### Future Security Improvements
 
 \- Restrict outbound traffic according to the principle of least privilege.
 
@@ -80,7 +80,7 @@ Terraform was used to import and manage the existing AWS infrastructure. Running
 
 
 
-\## Tools and Technologies
+## Tools and Technologies
 
 
 
@@ -98,7 +98,7 @@ Terraform was used to import and manage the existing AWS infrastructure. Running
 
 
 
-\## Project Workflow
+## Project Workflow
 
 
 
@@ -119,4 +119,5 @@ Terraform was used to import and manage the existing AWS infrastructure. Running
 
 
 \*\*Note:\*\* The AWS resources were originally created manually and subsequently imported into Terraform. They have not yet been deployed from scratch using Terraform.
+
 
